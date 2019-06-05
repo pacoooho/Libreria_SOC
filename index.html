@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home - Llibreria SOC</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/funciones.js" type="text/javascript" charset="utf-8" ></script>
+
+    <script src="js/script.js" type="text/javascript" charset="utf-8" ></script>
+
+    <script>window.onload=carga</script>
+
+ 
+
+</head>
+
+<body class="contenido" data-pagina="inici" >
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="navegador">
+                <h1 class="logo"><a href="index.html">LLSOC</a></h1>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html">Inici</a></li>
+                        <li><a href="llibres.html">Llibres</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navegador">
+                <div class="submit-buscador">
+                    <form action="llibres.html" oninput="formAction()" method="GET"> 
+                        <input class= "buscar" name="q" type="search" placeholder="Buscar llibres"/>
+                      <button class="lente" type="submit">
+                          <i class="cuadrado-lente fas fa-search"></i>
+                      </button>
+                    </form>
+                </div>
+                <div class="buscador">
+                    <a href=cistella.html class="icon-cistella circle "><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="icon-perfil circle"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="presentacio">
+        <div class="contenedor">
+            <h2>Presentació</h2>
+            <p>El món dels llibres cobra sentit quan hi ha lectors que gaudeixen,
+                s’informen o aprenen amb aquests llibres,
+                quan el llibre deixa de ser només un objecte per convertir-se en una eina de transmissió de coneixement. Però per aconseguir lectors és important activar iniciatives que apropin la lectura a la ciutadania. A Catalunya, l’índex de lectura de llibres no ha parat d’augmentar entre la població de catorze anys o més, si tenim en compte les dades des del 2011 fins al 2016. Més informació al <a href="http://cultura.gencat.cat/ca/departament/plans-i-programes/ambit-sectorial/pla-de-lectura-2020/pla-actuacio/">Plà d'Actuació de la Generalitat</a></p>
+            <p>La dada més important d’anàlisi de la comprensió lectora entre els més joves és l’informe <abbr title="Programme of International Student Assessment">PISA</abbr> , referent mundial en matèria d’educació. L’estudi s’elabora cada tres anys amb alumnes de quinze anys de diferents països. </p>
+            <blockquote class="cita">
+                <p>"Un home o una dona amb un bon llibre a la mà és un perill públic, una bomba de rellotgeria ambulant, un pensador potencial pel seu compte, un insubordinat potencial, un home o una dona capaç de dir “no” quan tothom diu "sí"."
+
+                </p><cite><span class="autor-cita">Javier Cercas</span> - <span><em>Un perill públic</em></span></cite>
+            </blockquote>
+        </div>
+    </section>
+    <section class="destacats">
+        <div class="contenedor">
+            <h2>Llibres destacats</h2>
+            <div id="libreria4">
+ 
+                  <!--   <article class="llibre">
+                            <figure>
+                                <a href="#">
+                                    <img src="assets/images/rosalia.jpg" alt="portada llibre Rosalia">
+                                </a>
+                                <figcaption>
+                                    <a href="#">
+                                        <h3>Rosalia</h3>
+                                    </a>
+                                </figcaption>
+                            </figure>
+                            <address class="autor">
+                                Luisa Carnés
+                            </address>
+                        </article>  
+                <article class="llibre">
+                    <figure>
+                        <a href="#">
+                            <img src="assets/images/rosalia.jpg" alt="portada llibre Rosalia">
+                        </a>
+                        <figcaption>
+                            <a href="#">
+                                <h3>Rosalia</h3>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <address class="autor">
+                        Luisa Carnés
+                    </address>
+                </article>  
+                 <article class="llibre">
+                    <figure><a href="#"><img src="assets/images/lesbanyes.jpg" alt="portada llibre Les banyes del croissant"></a>
+                        <figcaption>
+                            <a href="#">
+                                <h3>Les banyes del croissant</h3>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <address class="autor">Antonina Canyelles</address>
+                </article>
+                <article class="llibre">
+                    <figure><a href="#"><img src="assets/images/ladesaparicio.jpg" alt="portada llibre La desaparició de Stephanie Mailer"></a>
+                        <figcaption>
+                            <a href="#">
+                                <h3>La desaparició de Stephanie Mailer</h3>
+                            </a>
+                        </figcaption>
+                    </figure>
+                    <address class="autor">Joël Dicker</address>
+                </article> -->  
+            </div>
+        </div>
+    </section>
+    <section class="mes-llegits">
+        <div class="contenedor">
+            <h2>Llibres més llegits per Sant Jordi </h2>
+            <ul>
+                <li>Ficció català
+                    <ol>
+                        <li><i>La força d’un destí</i>, Martí Gironell (Columna Edicions)</li>
+                        <li><i>Jo soc aquell que va matar Franco</i>, Joan Lluís Lluís (Proa)</li>
+                        <li><i>La dona a la finestra</i>, A.J. Finn (Rosa dels Vents)</li>
+                    </ol>
+                </li>
+                <li>Ficció castellà
+                    <ol>
+                        <li><i>Las hijas del Captián</i>, María Dueñas (Editorial Planeta)</li>
+                        <li><i>Patria</i>, Fernando Aramburu (Tusquets Editores)</li>
+                        <li><i>La mujer en la ventana</i>, A. J. Finn (Grijalbo)</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+<footer class="pie">
+    <div class="contenedor">
+        <div class="logo-peu">
+            <div class="logoUOC"><img src="assets/images/logo-uoc.png" alt="UOC">
+            </div><address class="autor-pagina">Francisco Muñoz Pérez</address>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

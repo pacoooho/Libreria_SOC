@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cistella - Llibreria SOC</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/funciones.js" type="text/javascript" charset="utf-8" ></script>
+
+    <script src="js/script.js" type="text/javascript" charset="utf-8" ></script>
+
+    <script>window.onload=carga</script>
+
+</head>
+
+<body class="contenido" data-pagina="cistella">
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="navegador">
+                <h1 class="h2 logo"><a href="index.html">LLSOC</a></h1>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html">Inici</a></li>
+                        <li><a href="llibres.html">Llibres</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navegador">
+                <div class="submit-buscador">
+                    <form action="llibres.html" oninput="formAction()" method="GET"> 
+                        <input class= "buscar" name="q" type="search" placeholder="Buscar llibres"/>
+                      <button class="lente" type="submit">
+                          <i class="cuadrado-lente fas fa-search"></i>
+                      </button>
+                    </form>
+                </div>
+                <div class="buscador">
+                    <a href=cistella.html class="icon-cistella circle "><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="icon-perfil circle"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main class="contenedor" style="display:none;">
+    <h1 class="title">Cistella de la compra</h1>
+   <div class="listaCompra">
+    <ul>
+
+
+    </ul>
+</div>
+    <table class="table" > 
+        <caption>llibres a la teva cistella</caption>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Llibre</th>
+                <th scope="col">Preu</th>
+                <th scope="col">Qt</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-title="x">x</td>
+                <td>img</td>
+                <td>Les banyes del croissant (tapa dura)</td>
+                <td data-title="Preu">5€</td>
+                <td data-title="Qt">2</td>
+                <td data-title="Total">10€</td>
+            </tr>
+            <tr>
+                <td data-title="x">x</td>
+                <td>img</td>
+                <td >Rosalia</td>
+                <td data-title="Preu">5€</td>
+                <td data-title="Qt">2</td>
+                <td data-title="Total">10€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">Total</th>
+                <td class="cistella-total" data-title="Total cistella">20€</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div class="buttons-cistella">
+        <button class="btn update">Actualitzar cistella</button>
+        <button class="btn checkout">Comprar <i class="fas fa-forward"></i></button>
+    </div>
+
+</main>
+<footer class="pie">
+    <div class="contenedor">
+        <div class="logo-peu">
+            <div class="logoUOC"><img src="assets/images/logo-uoc.png" alt="UOC">
+            </div><address class="autor-pagina">Francisco Muñoz Pérez</address>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

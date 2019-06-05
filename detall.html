@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detall - Llibreria SOC</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/funciones.js" type="text/javascript" charset="utf-8" ></script>
+
+    <script src="js/script.js" type="text/javascript" charset="utf-8" ></script>
+
+    <script>window.onload=carga</script>
+
+</head>
+
+<body class="contenido" data-pagina="detall" >
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="navegador">
+                <h1 class="logo"><a href="index.html">LLSOC</a></h1>
+                <nav>
+                    <ul>
+                        <li class="active"><a href="index.html">Inici</a></li>
+                        <li><a href="llibres.html">Llibres</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="navegador">
+                <div class="submit-buscador">
+                    <form action="llibres.html" oninput="formAction()" method="GET"> 
+                        <input class= "buscar" name="q" type="search" placeholder="Buscar llibres"/>
+                      <button class="lente" type="submit">
+                          <i class="cuadrado-lente fas fa-search"></i>
+                      </button>
+                    </form>
+                </div>
+                <div class="buscador">
+                    <a href=cistella.html class="icon-cistella circle "><i class="fas fa-shopping-cart"></i></a>
+                    <a href="#" class="icon-perfil circle"><i class="fas fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main class="contenedor">
+    <article class="llibre-detall">
+        <figure class="imatge-llibre">
+            <img src="" alt="">
+        </figure>
+        <div class="llibre-info">
+            <h1 class="titol"></h1>
+            <p class="detall-llibre-autor"></p>
+            <div class="resum"></div>
+            <form class="form-cistella"  action="cistella.html"  style="display:none;" >
+                <fieldset class="tipus">
+                    <legend>Escull format:</legend>
+                    <div class="tipus-llibre" >
+                        <div class="radio-boton">
+                            <input type="radio" id="tipus1" name="tipus-grp" value="ebok">
+                            <label for="tipus1">
+                                <span>Ebook</span>
+                                <span>5 €</span>
+                                <span>Disponible</span>
+                            </label>
+                        </div>
+                        <div class="radio-boton">
+                            <input type="radio" id="tipus2"  name="tipus-grp" value="tova">
+                            <label for="tipus2">
+                                <span>Tova</span>
+                                <span>5 €</span>
+                                <span>No disponible</span>
+                            </label>
+                        </div>
+                        <div class="radio-boton">
+                            <input type="radio" id="tipus3" name="tipus-grp" value="dura">
+                            <label for="tipus3" >
+                                <span>Dura</span>
+                                <span>5 €</span>
+                                <span>Disponible</span>
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="submit-cantidad">
+                        <button class="menos cuadrado" type="button" >
+                           <i class=" fas fa-minus" disabled></i>
+                        </button> 
+                        <input class= "cantidad" type="text" value="1" />
+                        <button class="mas cuadrado" type="button" >
+                            <i class=" fas fa-plus"></i>
+                        </button>
+                    </div>
+           
+                <div class="wrap-btns" >
+                    <button type="submit"   class="btn btn-comprar ">Cistella</button>
+                    <button type="submit"  class="btn btn-reservar ">Reservar</button>
+                </div>
+            </form>
+        </div>
+
+    </article>
+
+</main>
+<footer class="pie">
+    <div class="contenedor">
+        <div class="logo-peu">
+            <div class="logoUOC"><img src="assets/images/logo-uoc.png" alt="UOC">
+            </div><address class="autor-pagina">Francisco Muñoz Pérez</address>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
