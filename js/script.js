@@ -63,7 +63,7 @@ inici = () => {
     console.log(document.location.pathname);
     console.log("//////////////Enlace página///////////");
 
-    let peticion4Busquedas=`https://www.googleapis.com/books/v1/volumes?q=&orderBy=relevance&startIndex=4&maxResults=4&filter=paid-ebooks&printType=books&key=AIzaSyC21UNGXbHByC6avyzsenuEKYu0pPNN5sM`;
+    let peticion4Busquedas=`https://www.googleapis.com/books/v1/volumes?q=&orderBy=relevance&startIndex=4&maxResults=4&filter=paid-ebooks&printType=books`;
     let ultimaBusqueda = `q=${ jsonData.inicio.ultimaBusqueda}`;
     ultimaBusqueda=replaceString( ` `,`+`,ultimaBusqueda );
     console.log( `ultimaBusqueda ${ultimaBusqueda}` );
@@ -137,7 +137,7 @@ function formAction() {
     console.log(window.location.search);
     let startIndex = 0, maxResults = 0;
     let peticion18Busquedas =/* orderBy= newest | relevance*/ /* filter=paid-ebooks&printType=books& */
-    'https://www.googleapis.com/books/v1/volumes?XXX&orderBy=relevance&key=AIzaSyC21UNGXbHByC6avyzsenuEKYu0pPNN5sM';
+    'https://www.googleapis.com/books/v1/volumes?XXX&orderBy=relevance';
     let urlParametros = new URLSearchParams(window.location.search);
     // comprueba las 3 posibles entradas de datos para la búsqueda de la página y actua rellenando 
     //la busqueda en consequecia
@@ -307,7 +307,7 @@ detall = () => {
     console.log( `detall` );
     console.log( window.location.search );
     // Recupera parámetros
-    let peticion1Busqueda = `https://www.googleapis.com/books/v1/volumes/XXX?key=AIzaSyC21UNGXbHByC6avyzsenuEKYu0pPNN5sM`;
+    let peticion1Busqueda = `https://www.googleapis.com/books/v1/volumes/XXX`;
     let busqueda = window.location.search;
     busqueda= replaceString( `?`,``,busqueda );
     peticion1Busqueda = replaceString( `XXX`,busqueda,peticion1Busqueda );
