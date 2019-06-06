@@ -8,10 +8,7 @@ http.createServer(function (req, res) {
   var q = url.parse(req.url, true);
   console.log("q "+ q.pathname);
   console.log("IP "+ req.connection.remoteAddress);
-/*  
-for ( f in req){
-  console.log("f "+ f);
-} */
+
   var filename = "." + q.pathname;
   fs.readFile(filename, function(err, data) {
     if (err) {
@@ -29,4 +26,3 @@ for ( f in req){
 console.log(" http://localhost:8080/index.html");
 
 /* http://localhost:8080/index.html */
-/* http://localhost:8080/winter.html */
